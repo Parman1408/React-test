@@ -47,7 +47,7 @@ function App() {
         />
       </div>
       <div style={{ fontSize: '18px', margin: '20px 0 10px' }}>
-        How to Run Node.js in Visual Studio Code | SetUp Node.js in VSCode On Windows 11 (2024)
+        How to Run Node.js iows (2024)
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
         <img
