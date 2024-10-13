@@ -1,88 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Optional: If you want to create a separate CSS file
 
 function App() {
-  return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-        <div
-      style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        padding: '20px',
-        backgroundColor: '#181818',
-        color: '#fff',
-        fontFamily: 'Arial, sans-serif',
-      }}
-    >
-      <div
-        style={{
-          position: 'relative',
-          paddingBottom: '56.25%',
-          height: '0',
-          overflow: 'hidden',
-          maxWidth: '100%',
-          backgroundColor: '#000',
-        }}
-      >
-        <img
-          alt="Video thumbnail showing a small bird standing next to a large metallic object in a forest setting."
-          height="675"
-          src="https://storage.googleapis.com/a1aa/image/pp2Ib8ojPeUFHCXoemJTGApr5Hzeo6mZURZ0EnF1hWNs1TMnA.jpg"
-          width="1200"
-          style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-        />
-      </div>
-      <div style={{ fontSize: '18px', margin: '20px 0 10px' }}>
-        How to Run Node.js iows (2024)
-      </div>
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-        <img
-          alt="Channel icon"
-          height="40"
-          width="40"
-          src="https://storage.googleapis.com/a1aa/image/ERUxeewVdJoHTktsuyLB3be6MF9US0BbYwOZ9xJ5pxDq1TMnA.jpg"
-          style={{ borderRadius: '50%', marginRight: '10px' }}
-        />
-        <div style={{ fontSize: '14px', color: '#aaa' }}>ProgrammingKnowledge</div>
-        <button
-          style={{
-            backgroundColor: '#cc0000',
-            color: '#fff',
-            border: 'none',
-            padding: '10px 20px',
-            fontSize: '14px',
-            cursor: 'pointer',
-            marginLeft: 'auto',
-          }}
-        >
-          Subscribe
-        </button>
-      </div>
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-        <span style={{ marginRight: '20px', fontSize: '14px', color: '#aaa' }}>10K views</span>
-        <span style={{ marginRight: '20px', fontSize: '14px', color: '#aaa' }}>1 month ago</span>
-        <span style={{ fontSize: '14px', color: '#aaa' }}>#npm #VSCode #Windows11</span>
-      </div>
-      <div style={{ fontSize: '14px', color: '#aaa' }}>
-        How to Run Node.js in Visual Studio Code | SetUp Node.js in VSCode on Windows 11
-      </div>
-    </div>
-    </div>
-  );
+    return (
+        <div className="container">
+            <header className="header">
+                <div className="logo">Nicole Warshauer</div>
+                <nav className="nav">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">My Work</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </header>
+            <main className="main">
+                <div className="profile-pic" style={{ backgroundImage: "url('https://placehold.co/300x300')" }}></div>
+                <div className="intro">
+                    <h1>Hi, I’m Nicole</h1>
+                    <p>I build engaged communities.</p>
+                    <p>I’m one part marketer and one part word wrangler, often fueled by baked goods and a well-placed Oxford comma.</p>
+                    <p>I’m best known for delivering carefully crafted marketing strategies that create communities of brand evangelists.</p>
+                    <div className="buttons">
+                        <a className="chat" href="#">LET'S CHAT</a>
+                        <a className="about" href="#">ABOUT</a>
+                    </div>
+                </div>
+            </main>
+            <section className="about">
+                <h2>A bit about me</h2>
+                <p>
+                    In the 15+ years that I’ve been a legit, full-time working adult, I’ve led high-performing teams of digital marketers, community managers, and content creators. My experience spans tech to education, with key strengths in marketing strategy, content management, and community development.
+                </p>
+                <div className="brands">
+                    <img alt="Dior logo" src="https://storage.googleapis.com/a1aa/image/pPNdK6UFNcLiIpNMhVnZZJmilYrYykt7kgDOt7vKiD5H0l5E.jpg" />
+                    <img alt="Dribbble logo" src="https://storage.googleapis.com/a1aa/image/IIx8zMqeLF09OCrUubYebAILLpI0K1r9alrl2jTSrC1cQXmTA.jpg" />
+                    <img alt="GA logo" src="https://storage.googleapis.com/a1aa/image/NFQmaPTCjwJ8HFSf901EfllWNWSSMeV8g7YtafZtPzZ7BdZOB.jpg" />
+                </div>
+            </section>
+        </div>
+    );
 }
 
 export default App;
